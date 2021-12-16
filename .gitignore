@@ -1,41 +1,15 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+local Sound = Instance.new("Sound", workspace)
+Sound.SoundId = "rbxassetid://2942632288"
+Sound:Play()
+Sound.Looped = true
+Sound.Volume = 10
+print("ITS SO LOUD!")
+local Sound3 = Instance.new("Sound", workspace)
+Sound3.SoundId = "rbxassetid://2942632288"
+Sound3.Name = "Sound3"
+local ReverbSoundEffect = Instance.new("ReverbSoundEffect", workspace.Sound3)
+ReverbSoundEffect.DecayTime = 20
+ReverbSoundEffect.DryLevel = 15.15
+ReverbSoundEffect.WetLevel = -80
+Sound3.Volume = 5.5
+Sound3.Looped = false
