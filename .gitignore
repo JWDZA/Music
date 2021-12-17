@@ -1,15 +1,14 @@
-local Sound = Instance.new("Sound", workspace)
-Sound.SoundId = "rbxassetid://2942632288"
-Sound:Play()
-Sound.Looped = true
-Sound.Volume = 10
-print("ITS SO LOUD!")
-local Sound3 = Instance.new("Sound", workspace)
-Sound3.SoundId = "rbxassetid://2942632288"
-Sound3.Name = "Sound3"
-local ReverbSoundEffect = Instance.new("ReverbSoundEffect", workspace.Sound3)
-ReverbSoundEffect.DecayTime = 20
-ReverbSoundEffect.DryLevel = 15.15
-ReverbSoundEffect.WetLevel = -80
-Sound3.Volume = 5.5
-Sound3.Looped = false
+--- MADE BY JWDZA
+local s = Instance.new("Sound")
+
+s.Name = "Sound"
+s.SoundId = "rbxassetid://2942632288"
+s.Volume = 10
+s.Looped = true
+s.archivable = false
+
+s.Parent = game.Workspace
+
+wait(10)
+
+s:play()
